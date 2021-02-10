@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      
+    <meta charset="utl-8">
+</head>
+<body>
+    ここで改行します。<br>改行しました。
+    <button type="button" onclick="alert('off')">on</button>
+    <table class="meibo">
+        <colgroup span="1" style="width:50px; background-color:#ccccff;"></colgroup>
+        <colgroup>
+            <col span="1" style="width:100px; background-color:#ffcccc;">
+            <col span="2" style="width:150px; background-color:#ccffcc;">
+        </colgroup>
+        <tr><th>名前</th><th>出身</th><th>Ａ値</th><th>Ｂ値</th></tr>
+        <tr><td>田中</td><td>東京</td><td>123</td><td>12.3</td></tr>
+        <tr><td>鈴木</td><td>大坂</td><td>456</td><td>45.6</td></tr>
+        <tr><td>佐藤</td><td>京都</td><td>789</td><td>78.9</td></tr>
+    </table>
+    <form method="POST" action="cgi/sample.cgi">
+        <div>名前：<input type="text" name="neme"></div>
+        <div>住所：<input type="password" name="addr"></div>
+        <input type="radio" name="gender" value="男">男
+        <input type="radio" name="gender" value="女">女
+        <input type="radio" name="gender" value="不明">不明
+        <input type="radio" name="gender" value=パソコン>パソコン
+        <input type="radio" name="gender" value="バドミントン">バドミントン
+        <input type="submit" value="送信">
+        <input type="submit" value="取消">
+    </form> 
+    <details>
+        <summary>検索オプション</summary>
+        <div><label><input type="name" name="ch1">日本語サイトのみ</label></div>
+        <div><label><input type="text" name="ch2">セーフサーチ無効</label></div>
+    </details>
+    <label>
+        好きなスポーツは？
+        <input name="fav_sports" list="sports_list">
+        <datalist id="sports_list">
+          <option value="バドミントン">
+          <option value="水泳">
+          <option value="空手">
+        </datalist>
+      </label>  
+    <address>お問い合わせは<a href="https://www.yahoo.co.jp/">https://www.yahoo.co.jp/</a>まで
+    </address>
+    <abbr title="world wide web">html</abbr>は↓
+    <article>
+        <header>
+            <h1>html5に対応しました</h1>
+            <div>2021-1-25 19:40</div>
+        </header>
+        <p><mark>htmlリファレンスをhtml5に対応させました<mark></mark></p>
+        <table>
+            <caption>【県庁所在地】</caption>
+            <tr><th>県名</th><th>県庁所在地</th></tr>
+            <tr><td>愛媛</th><th>松山</td></tr>
+            <tr><td>沖縄</th><th>那覇</td></tr>
+            <tr><td>宮城</th><th>仙台</td></tr>
+        </table>
+        <article>
+            <h3>見出し</h3>
+            <p>本文</p>
+            <footer>
+              <div>Posted by T. Yamada</div>
+              <div><a href="https://www.yahoo.co.jp/">https://www.yahoo.co.jp/</a></div>
+            </footer>
+          </article>
+        <section>
+            <h2>コメント</h2>
+            <article>
+                <h3>対応</h3>
+                <header>
+                    <address>投稿者: 木村優真</address>
+                    <div>2021-1-25 19:45</div>
+                </header>
+                <p>ようやく開始ですね</p>
+            </article>
+        </section>
+        <footer><address>author: 会社</address></footer>    
+    </article>
+    <aside><p>余談です</p></aside>
+    <audio src="audio1.mp3" autoplay loop>
+        <p>このブラウザは audio に未対応です</p>
+    </audio>
+    今から引用を開始します
+    <blockquote>
+        この部分が引用文です
+        多くのブラウザでは、引用文の前後左右に隙間がある
+    </blockquote>
+    引用が終わりました
+    より詳し情報は、<cite>RF2021</cite>を参照して下さい
+    この記事<data value="2021-1-25T21:17:00+09:00">2021年1月25日 21時17分</data> に投稿されました。
+    javascript で変数　num に値　5　を代入するには、<code>num = 5;</code>と記述します
+    <br>
+    This text is <em>html</em>.
+    <form method="POST" action="cgi-bin/xx.cgi">
+        <fieldset>
+          <legend>お客様情報</legend>
+          名前：<input type="text" name="NAME" size=15>
+          年齢：<input type="text" name="AGE" size=15>
+        </fieldset>
+        <fieldset>
+          <legend>ご利用環境</legend>
+          ＯＳ：<input type="text" name="OS" size=15>
+          ブラウザ：<input type="text" name="BROWSER" size=15>
+        </fieldset>
+        <input type="submit" value="完了">
+      </form>
+      <hr style="width:300px; height:100px; background-color:#07a03a;">
+      <iframe src="a.htm" width=600 height=200></iframe>
+      <br>
+      世界の人口は
+      <del datetime="1999-10-12T00:00+09:00">60億人</del>
+      <ins datetime="1999-10-12T00:00+09:00">70億人</ins>
+      に達しています
+      <br>
+      ここで　<kbd>alt-a</kbd> を入力してください
+      <meter min=0 max=20 value=70>70 / 100</meter>
+      <meter min=0 max=100 value=70>70 / 100</meter>
+      <select>
+        <optgroup label="Internet Explorer">
+          <option>Internet Explorer 1
+          <option>Internet Explorer 5
+          <option>Internet Explorer 10
+        </optgroup>
+        <optgroup label="Other">
+          <option>Google Chrome
+          <option>Firefox
+          <option>Safari
+          <option>Opera
+          <option>なし
+        </optgroup>
+      </select>
+      <form onsubmit="return false" oninput="z.value = Number(x.value) + Number(y.value)">
+        <input name="x" type="number" value="15"> +
+        <input name="y" type="number" value="15"> =
+        <output name="z">30</output>
+</body>
+</html>

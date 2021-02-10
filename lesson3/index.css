@@ -1,0 +1,13 @@
+#red {
+color: rgba(12, 4, 4, 0.932);
+}
+.blue {
+    color: blue;
+}
+
+h1 {
+padding: 0.4em 1em 0.5em;
+background: #e5e5e5;
+border-left: solid 5px #6594e0;
+border-bottom: solid 3px #d7d7d7;
+}
