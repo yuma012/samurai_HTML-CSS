@@ -40,35 +40,28 @@
       console.log(getDouble(myNumber));
 
 
-        for( let i = 1; i <= 100; i++ ){
-          if ( (i % 15) == 0){
-            console.log('fizzbuzz');
-          }else if(i % 3 == 0){
-            console.log('fizz');  
-          }else if ( i % 5 == 0){
-            console.log('buzz');
-          }else{
-            console.log(i);
-          }
-        }
-
-        const Dollar = 108;
-        const getDollarToYen = (number) => {
-          return number * Dollar;
-        }
-        while(true) {
-          const money = prompt('ドルから円に換算します');
-          if(money) {
-            console.log(getDollarToYen(money) + '円です');
-          } else break;
-        }
-
         const user = {
           name: '太郎',
           age: 30,
           area: '東京都'
         };
-        console.log(user);
+        console.log(user.age);
+
+        const animal = {
+          cat: { name:'ペルシャ', age:'3歳' },
+          dog: { name:'プードル', age:'2歳' }
+        }
+
+
+
+
+
+
+
+
+
+
+        
 
 
     </script>
